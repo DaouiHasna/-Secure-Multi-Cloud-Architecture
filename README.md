@@ -118,5 +118,4 @@ This project demonstrates practical experience in:
 
 ## Author
 
-Imane Benelfakir
-Cybersecurity & Cloud Computing Engineering Student
+Hasna Daoui  Cybersecurity Engineering Student
