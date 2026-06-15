@@ -1,0 +1,35 @@
+# Terraform secrets
+*.tfstate
+*.tfstate.backup
+.terraform/
+*.tfvars
+terraform-key.pem
+*.pem
+*.key
+
+# AWS credentials
+.aws/
+gcp.txt
+
+# Logs
+logs/
+*.log
+
+# Node
+node_modules/
+
+# Environment variables
+.env
+
+# Python / ML
+__pycache__/
+*.pyc
+*.h5
+*.pkl
+*.pt
+
+# Models folder
+models/
+
+# System files
+.DS_Store
