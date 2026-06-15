@@ -1,0 +1,42 @@
+[
+    {
+        "ID": "vpn-07bbf4f6f603f5bca",
+        "State": "available",
+        "Tunnels": [
+            {
+                "AcceptedRouteCount": 0,
+                "LastStatusChange": "2026-05-08T23:21:56+00:00",
+                "OutsideIpAddress": "52.18.100.81",
+                "Status": "DOWN",
+                "StatusMessage": "IPSEC IS UP"
+            },
+            {
+                "AcceptedRouteCount": 0,
+                "LastStatusChange": "2026-05-08T23:22:00+00:00",
+                "OutsideIpAddress": "176.34.245.247",
+                "Status": "DOWN",
+                "StatusMessage": "IPSEC IS UP"
+            }
+        ]
+    },
+    {
+        "ID": "vpn-0c0a0da1acedf1f9b",
+        "State": "available",
+        "Tunnels": [
+            {
+                "AcceptedRouteCount": 0,
+                "LastStatusChange": "2026-05-08T22:57:08+00:00",
+                "OutsideIpAddress": "34.250.199.48",
+                "Status": "DOWN",
+                "StatusMessage": "IPSEC IS DOWN"
+            },
+            {
+                "AcceptedRouteCount": 0,
+                "LastStatusChange": "2026-05-08T22:57:05+00:00",
+                "OutsideIpAddress": "54.72.135.125",
+                "Status": "DOWN",
+                "StatusMessage": "IPSEC IS DOWN"
+            }
+        ]
+    }
+]

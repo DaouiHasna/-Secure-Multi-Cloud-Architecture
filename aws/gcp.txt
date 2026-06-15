@@ -1,0 +1,370 @@
+khadija@DESKTOP-JQ75HMT:~$ gcloud services enable compute.googleapis.com
+vices enable iam.googleapis.com
+gcloud services enable cloudkms.googleapis.com
+gcloud services enable servicenetworking.googleapis.comCommand 'gcloud' not found, but can be installed with:
+sudo snap install google-cloud-cli
+khadija@DESKTOP-JQ75HMT:~$ gcloud services enable iam.googleapis.com
+Command 'gcloud' not found, but can be installed with:
+sudo snap install google-cloud-cli
+khadija@DESKTOP-JQ75HMT:~$ gcloud services enable cloudkms.googleapis.com
+Command 'gcloud' not found, but can be installed with:
+sudo snap install google-cloud-cli
+khadija@DESKTOP-JQ75HMT:~$ gcloud services enable servicenetworking.googleapis.com
+Command 'gcloud' not found, but can be installed with:
+sudo snap install google-cloud-cli
+khadija@DESKTOP-JQ75HMT:~$ sudo snap install google-cloud-cli --classic
+[sudo] password for khadija:
+2026-04-09T09:57:53Z INFO Waiting for automatic snapd restart...
+google-cloud-cli 564.0.0 from Cloud SDK (google-cloud-sdk✓) installed
+khadija@DESKTOP-JQ75HMT:~$ gcloud --version
+Google Cloud SDK 564.0.0
+alpha 2026.04.03
+beta 2026.04.03
+bq 2.1.31
+bundled-python3-unix 3.13.11
+core 2026.04.03
+gcloud-crc32c 1.0.0
+gsutil 5.36
+minikube 1.38.1
+preview 2026.04.03
+skaffold 2.18.2
+khadija@DESKTOP-JQ75HMT:~$ gcloud auth login
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=wWB30olygSttQ2qAKpOA1fU6rL8cYC&access_type=offline&code_challenge=3iNACOoPlp1jh1-YyLufHytW207lOUixqX8UPQCYvZo&code_challenge_method=S256
+
+gio: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=wWB30olygSttQ2qAKpOA1fU6rL8cYC&access_type=offline&code_challenge=3iNACOoPlp1jh1-YyLufHytW207lOUixqX8UPQCYvZo&code_challenge_method=S256: Operation not supported
+^C
+
+Command killed by keyboard interrupt
+
+
+khadija@DESKTOP-JQ75HMT:~$ gcloud auth login --no-launch-browser
+Go to the following link in your browser, and complete the sign-in prompts:
+
+    https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsdk.cloud.google.com%2Fauthcode.html&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=Uyz02fQ72ZBAwdJTMdaYOVfiDxDVLT&prompt=consent&token_usage=remote&access_type=offline&code_challenge=ePRMGI3qHFSsEJXNtxNhGLPyXTFOWM1voOGTr_10sNk&code_challenge_method=S256
+
+Once finished, enter the verification code provided in your browser: 4/0Aci98E_ysuPCP1Az_kmCP4pcIA26vr3ullZaTo-DscC7tAzVG5SZa6nsbhgIm-0u882teg
+
+You are now logged in as [khadijabouargalne2004@gmail.com].
+Your current project is [multicloud-secure-lab].  You can change this setting by running:
+  $ gcloud config set project PROJECT_ID
+khadija@DESKTOP-JQ75HMT:~$ gcloud services enable compute.googleapis.com iam.googleapis.com cloudkms.googleapis.com servicenetworking.googleapis.com
+Operation "operations/acat.p2-400312484701-bfcda5e3-a5dd-45cc-855f-4bf4dfdf72d8" finished successfully.
+khadija@DESKTOP-JQ75HMT:~$ gcloud services list --enabled
+NAME                                 TITLE
+analyticshub.googleapis.com          Analytics Hub API
+bigquery.googleapis.com              BigQuery API
+bigqueryconnection.googleapis.com    BigQuery Connection API
+bigquerydatapolicy.googleapis.com    BigQuery Data Policy API
+bigquerydatatransfer.googleapis.com  BigQuery Data Transfer API
+bigquerymigration.googleapis.com     BigQuery Migration API
+bigqueryreservation.googleapis.com   BigQuery Reservation API
+bigquerystorage.googleapis.com       BigQuery Storage API
+cloudapis.googleapis.com             Google Cloud APIs
+cloudkms.googleapis.com              Cloud Key Management Service (KMS) API
+cloudresourcemanager.googleapis.com  Cloud Resource Manager API
+cloudtrace.googleapis.com            Cloud Trace API
+compute.googleapis.com               Compute Engine API
+dataform.googleapis.com              Dataform API
+dataplex.googleapis.com              Cloud Dataplex API
+datastore.googleapis.com             Cloud Datastore API
+iam.googleapis.com                   Identity and Access Management (IAM) API
+iamcredentials.googleapis.com        IAM Service Account Credentials API
+logging.googleapis.com               Cloud Logging API
+monitoring.googleapis.com            Cloud Monitoring API
+oslogin.googleapis.com               Cloud OS Login API
+secretmanager.googleapis.com         Secret Manager API
+servicemanagement.googleapis.com     Service Management API
+servicenetworking.googleapis.com     Service Networking API
+serviceusage.googleapis.com          Service Usage API
+sql-component.googleapis.com         Cloud SQL
+storage-api.googleapis.com           Google Cloud Storage JSON API
+storage-component.googleapis.com     Cloud Storage
+storage.googleapis.com               Cloud Storage API
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute networks create secure-vpc --subnet-mode=custom
+Created [https://www.googleapis.com/compute/v1/projects/multicloud-secure-lab/global/networks/secure-vpc].
+NAME        SUBNET_MODE  BGP_ROUTING_MODE  IPV4_RANGE  GATEWAY_IPV4  INTERNAL_IPV6_RANGE
+secure-vpc  CUSTOM       REGIONAL
+
+Instances on this network will not be reachable until firewall rules
+are created. As an example, you can allow all internal traffic between
+instances as well as SSH, RDP, and ICMP by running:
+
+$ gcloud compute firewall-rules create <FIREWALL_NAME> --network secure-vpc --allow tcp,udp,icmp --source-ranges <IP_RANGE>
+$ gcloud compute firewall-rules create <FIREWALL_NAME> --network secure-vpc --allow tcp:22,tcp:3389,icmp
+
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute networks subnets create secure-subnet --network=secure-vpc --region=europe-west1 --range=10.10.0.0/24
+Created [https://www.googleapis.com/compute/v1/projects/multicloud-secure-lab/regions/europe-west1/subnetworks/secure-subnet].
+NAME           REGION        NETWORK     RANGE         STACK_TYPE  IPV6_ACCESS_TYPE  INTERNAL_IPV6_PREFIX  EXTERNAL_IPV6_PREFIX
+secure-subnet  europe-west1  secure-vpc  10.10.0.0/24  IPV4_ONLY
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute firewall-rules create allow-internal \
+--networ>   --network=secure-vpc \
+>   --allow=tcp,udp,icmp \
+>   --source-ranges=10.10.0.0/24
+Creating firewall...⠹Created [https://www.googleapis.com/compute/v1/projects/multicloud-secure-lab/global/firewalls/allow-internal].
+Creating firewall...done.
+NAME            NETWORK     DIRECTION  PRIORITY  ALLOW         DENY  DISABLED
+allow-internal  secure-vpc  INGRESS    1000      tcp,udp,icmp        False
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances create secure-vm \
+zone=eur>   --zone=europe-west1-b \
+>   --subnet=secure-subnet \
+address >   --no-address \
+>   --machine-type=e2-micro
+Created [https://www.googleapis.com/compute/v1/projects/multicloud-secure-lab/zones/europe-west1-b/instances/secure-vm].
+NAME       ZONE            MACHINE_TYPE  PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP  STATUS
+secure-vm  europe-west1-b  e2-micro                   10.10.0.2                 RUNNING
+khadija@DESKTOP-JQ75HMT:~$ gcloud config get-value project
+multicloud-secure-lab
+khadija@DESKTOP-JQ75HMT:~$ gcloud iam service-accounts create security-sa \
+>   --display-name="Security Service Account"
+Created service account [security-sa].
+khadija@DESKTOP-JQ75HMT:~$ gcloud projects add-iam-policy-binding multicloud-secure-lab \
+ --membe>   --member="serviceAccount:security-sa@multicloud-secure-lab.iam.gserviceaccount.com" \
+oles/log>   --role="roles/logging.viewer"
+Updated IAM policy for project [multicloud-secure-lab].
+bindings:
+- members:
+  - serviceAccount:400312484701@cloudservices.gserviceaccount.com
+  role: roles/compute.instanceGroupManagerServiceAgent
+- members:
+  - serviceAccount:service-400312484701@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:400312484701-compute@developer.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:security-sa@multicloud-secure-lab.iam.gserviceaccount.com
+  role: roles/logging.viewer
+- members:
+  - user:khadijabouargalne2004@gmail.com
+  role: roles/owner
+etag: BwZPBHkB5OE=
+version: 1
+khadija@DESKTOP-JQ75HMT:~$ gcloud iam service-accounts list
+DISPLAY NAME                            EMAIL                                                      DISABLED
+Compute Engine default service account  400312484701-compute@developer.gserviceaccount.com         False
+Security Service Account                security-sa@multicloud-secure-lab.iam.gserviceaccount.com  False
+khadija@DESKTOP-JQ75HMT:~$ gcloud kms keyrings create secure-keyring \
+location>   --location=global
+khadija@DESKTOP-JQ75HMT:~$ gcloud kms keys create secure-key \
+>   --location=global \
+>   --keyring=secure-keyring \
+>   --purpose=encryption
+khadija@DESKTOP-JQ75HMT:~$ gcloud kms keys list --location=global --keyring=secure-keyring
+NAME                                                                                           PURPOSE          ALGORITHM                    PROTECTION_LEVEL  LABELS  PRIMARY_ID  PRIMARY_STATE
+projects/multicloud-secure-lab/locations/global/keyRings/secure-keyring/cryptoKeys/secure-key  ENCRYPT_DECRYPT  GOOGLE_SYMMETRIC_ENCRYPTION  SOFTWARE                  1           ENABLED
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances describe secure-vm \
+>   --zone=europe-west1-b \
+>   --format="get(serviceAccounts.email)"
+400312484701-compute@developer.gserviceaccount.com
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances create secure-vm-sa \
+europe-w>   --zone=europe-west1-b \
+>   --subnet=secure-subnet \
+no-addre>   --no-address \
+>   --machine-type=e2-micro \
+>   --service-account=security-sa@multicloud-secure-lab.iam.gserviceaccount.com \
+>   --scopes=https://www.googleapis.com/auth/logging.write
+Created [https://www.googleapis.com/compute/v1/projects/multicloud-secure-lab/zones/europe-west1-b/instances/secure-vm-sa].
+NAME          ZONE            MACHINE_TYPE  PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP  STATUS
+secure-vm-sa  europe-west1-b  e2-micro                   10.10.0.3                 RUNNING
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances describe secure-vm-sa \
+e=europe>   --zone=europe-west1-b \
+>   --format="get(serviceAccounts.email)"
+security-sa@multicloud-secure-lab.iam.gserviceaccount.com
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances describe secure-vm-sa \
+e=europe>   --zone=europe-west1-b \
+>   --format="yaml(name,serviceAccounts,labels,tags)"
+name: secure-vm-sa
+serviceAccounts:
+- email: security-sa@multicloud-secure-lab.iam.gserviceaccount.com
+  scopes:
+  - https://www.googleapis.com/auth/logging.write
+tags:
+  fingerprint: 42WmSpB8rSM=
+khadija@DESKTOP-JQ75HMT:~$ gcloud storage buckets create gs://khadija-secure-logs-2026 \
+ion=euro>   --location=europe-west1
+Creating gs://khadija-secure-logs-2026/...
+khadija@DESKTOP-JQ75HMT:~$ gcloud logging sinks create audit-logs \
+>   storage.googleapis.com/khadija-secure-logs-2026
+Sink with empty filter matches all entries.
+
+Do you want to continue (Y/n)?  y
+
+Created [https://logging.googleapis.com/v2/projects/multicloud-secure-lab/sinks/audit-logs].
+Please remember to grant `serviceAccount:service-400312484701@gcp-sa-logging.iam.gserviceaccount.com` the Storage Object Creator role on the bucket.
+More information about sinks can be found at https://cloud.google.com/logging/docs/export/configure_export
+khadija@DESKTOP-JQ75HMT:~$ gcloud logging sinks describe audit-logs
+createTime: '2026-04-09T10:35:54.460172619Z'
+destination: storage.googleapis.com/khadija-secure-logs-2026
+name: audit-logs
+resourceName: projects/multicloud-secure-lab/sinks/audit-logs
+updateTime: '2026-04-09T10:35:54.460172619Z'
+writerIdentity: serviceAccount:service-400312484701@gcp-sa-logging.iam.gserviceaccount.com
+khadija@DESKTOP-JQ75HMT:~$ gcloud storage buckets add-iam-policy-binding gs://khadija-secure-logs-2026 \
+r="serv>   --member="serviceAccount:service-400312484701@gcp-sa-logging.iam.gserviceaccount.com" \
+>   --role="roles/storage.objectCreator"
+bindings:
+- members:
+  - projectEditor:multicloud-secure-lab
+  - projectOwner:multicloud-secure-lab
+  role: roles/storage.legacyBucketOwner
+- members:
+  - projectViewer:multicloud-secure-lab
+  role: roles/storage.legacyBucketReader
+- members:
+  - serviceAccount:service-400312484701@gcp-sa-logging.iam.gserviceaccount.com
+  role: roles/storage.objectCreator
+etag: CAI=
+kind: storage#policy
+resourceId: projects/_/buckets/khadija-secure-logs-2026
+version: 1
+khadija@DESKTOP-JQ75HMT:~$ gcloud storage buckets get-iam-policy gs://khadija-secure-logs-2026
+bindings:
+- members:
+  - projectEditor:multicloud-secure-lab
+  - projectOwner:multicloud-secure-lab
+  role: roles/storage.legacyBucketOwner
+- members:
+  - projectViewer:multicloud-secure-lab
+  role: roles/storage.legacyBucketReader
+- members:
+  - serviceAccount:service-400312484701@gcp-sa-logging.iam.gserviceaccount.com
+  role: roles/storage.objectCreator
+etag: CAI=
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute disks create secure-disk-kms \
+>   --size=10GB \
+>   --zone=europe-west1-b \
+>   --kms-key=projects/multicloud-secure-lab/locations/global/keyRings/secure-keyring/cryptoKeys/secure-key
+WARNING: You have selected a disk size of under [200GB]. This may result in poor I/O performance. For more information, see: https://developers.google.com/compute/docs/disks#performance.
+ERROR: (gcloud.compute.disks.create) Could not fetch resource:
+ - Cloud KMS error when using key projects/multicloud-secure-lab/locations/global/keyRings/secure-keyring/cryptoKeys/secure-key: Permission 'cloudkms.cryptoKeyVersions.useToEncrypt' denied on resource 'projects/multicloud-secure-lab/locations/global/keyRings/secure-keyring/cryptoKeys/secure-key' (or it may not exist).
+
+khadija@DESKTOP-JQ75HMT:~$ gcloud kms keys add-iam-policy-binding secure-key \
+=global >   --location=global \
+>   --keyring=secure-keyring \
+>   --member="serviceAccount:service-400312484701@compute-system.iam.gserviceaccount.com" \
+>   --role="roles/cloudkms.cryptoKeyEncrypterDecrypter"
+Updated IAM policy for key [secure-key].
+bindings:
+- members:
+  - serviceAccount:service-400312484701@compute-system.iam.gserviceaccount.com
+  role: roles/cloudkms.cryptoKeyEncrypterDecrypter
+etag: BwZPBKPj2rk=
+version: 1
+khadija@DESKTOP-JQ75HMT:~$ gcloud kms keys get-iam-policy secure-key \
+>   --location=global \
+>   --keyring=secure-keyring
+bindings:
+- members:
+  - serviceAccount:service-400312484701@compute-system.iam.gserviceaccount.com
+  role: roles/cloudkms.cryptoKeyEncrypterDecrypter
+etag: BwZPBKPj2rk=
+version: 1
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute disks create secure-disk-kms \
+>   --size=10GB \
+>   --zone=europe-west1-b \
+>   --kms-key=projects/multicloud-secure-lab/locations/global/keyRings/secure-keyring/cryptoKeys/secure-key
+WARNING: You have selected a disk size of under [200GB]. This may result in poor I/O performance. For more information, see: https://developers.google.com/compute/docs/disks#performance.
+Created [https://www.googleapis.com/compute/v1/projects/multicloud-secure-lab/zones/europe-west1-b/disks/secure-disk-kms].
+NAME             ZONE            SIZE_GB  TYPE         STATUS
+secure-disk-kms  europe-west1-b  10       pd-standard  READY
+
+New disks are unformatted. You must format and mount a disk before it
+can be used. You can find instructions on how to do this at:
+
+For Linux: https://cloud.google.com/compute/docs/disks/format-mount-disk-linux
+For Windows: https://cloud.google.com/compute/docs/disks/format-mount-disk-windows
+
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute disks describe secure-disk-kms \
+  --zone>   --zone=europe-west1-b \
+>   --format="yaml(name,sizeGb,diskEncryptionKey)"
+diskEncryptionKey:
+  kmsKeyName: projects/multicloud-secure-lab/locations/global/keyRings/secure-keyring/cryptoKeys/secure-key/cryptoKeyVersions/1
+name: secure-disk-kms
+sizeGb: '10'
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances attach-disk secure-vm-sa \
+ope-west>   --zone=europe-west1-b \
+>   --disk=secure-disk-kms
+Updated [https://www.googleapis.com/compute/v1/projects/multicloud-secure-lab/zones/europe-west1-b/instances/secure-vm-sa].
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances describe secure-vm-sa \
+e=europe>   --zone=europe-west1-b \
+>   --format="yaml(name,disks)"
+disks:
+- architecture: X86_64
+  autoDelete: true
+  boot: true
+  deviceName: persistent-disk-0
+  diskSizeGb: '10'
+  guestOsFeatures:
+  - type: UEFI_COMPATIBLE
+  - type: VIRTIO_SCSI_MULTIQUEUE
+  - type: GVNIC
+  - type: SEV_CAPABLE
+  - type: SEV_LIVE_MIGRATABLE_V2
+  index: 0
+  interface: SCSI
+  kind: compute#attachedDisk
+  licenses:
+  - https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-12-bookworm
+  mode: READ_WRITE
+  source: https://www.googleapis.com/compute/v1/projects/multicloud-secure-lab/zones/europe-west1-b/disks/secure-vm-sa
+  type: PERSISTENT
+- autoDelete: false
+  boot: false
+  deviceName: persistent-disk-1
+  diskEncryptionKey:
+    kmsKeyName: projects/multicloud-secure-lab/locations/global/keyRings/secure-keyring/cryptoKeys/secure-key/cryptoKeyVersions/1
+    kmsKeyServiceAccount: ''
+  diskSizeGb: '10'
+  index: 1
+  interface: SCSI
+  kind: compute#attachedDisk
+  mode: READ_WRITE
+  source: https://www.googleapis.com/compute/v1/projects/multicloud-secure-lab/zones/europe-west1-b/disks/secure-disk-kms
+  type: PERSISTENT
+name: secure-vm-sa
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute project-info add-metadata \
+>   --metadata=enable-oslogin=TRUE
+Updated [https://www.googleapis.com/compute/v1/projects/multicloud-secure-lab].
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute project-info describe \
+>   --format="yaml(commonInstanceMetadata)"
+commonInstanceMetadata:
+  fingerprint: 9T_TezzJEIE=
+  items:
+  - key: enable-oslogin
+    value: 'TRUE'
+  kind: compute#metadata
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances describe secure-vm-sa \
+e=europe>   --zone=europe-west1-b \
+>   --format="yaml(name,shieldedInstanceConfig)"
+name: secure-vm-sa
+shieldedInstanceConfig:
+  enableIntegrityMonitoring: true
+  enableSecureBoot: false
+  enableVtpm: true
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances update secure-vm-sa \
+ --zone=>   --zone=europe-west1-b \
+>   --shielded-secure-boot
+ERROR: (gcloud.compute.instances.update) HTTPError 400: Invalid resource usage: 'Instance should be in the STOPPED state.'.
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances stop secure-vm-sa \
+-zone=eu>   --zone=europe-west1-b
+Stopping instance(s) secure-vm-sa...done.
+Updated [https://compute.googleapis.com/compute/v1/projects/multicloud-secure-lab/zones/europe-west1-b/instances/secure-vm-sa].
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances update secure-vm-sa \
+ --zone=>   --zone=europe-west1-b \
+>   --shielded-secure-boot
+Setting shieldedInstanceConfig  of instance [secure-vm-sa]...done.
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances start secure-vm-sa \
+>   --zone=europe-west1-b
+Starting instance(s) secure-vm-sa...done.
+Updated [https://compute.googleapis.com/compute/v1/projects/multicloud-secure-lab/zones/europe-west1-b/instances/secure-vm-sa].
+Instance internal IP is 10.10.0.3
+khadija@DESKTOP-JQ75HMT:~$ gcloud compute instances describe secure-vm-sa \
+>   --zone=europe-west1-b \
+ormat=">   --format="yaml(shieldedInstanceConfig)"
+shieldedInstanceConfig:
+  enableIntegrityMonitoring: true
+  enableSecureBoot: true
+  enableVtpm: true
+khadija@DESKTOP-JQ75HMT:~$

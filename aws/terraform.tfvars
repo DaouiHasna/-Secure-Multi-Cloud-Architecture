@@ -1,0 +1,5 @@
+aws_region = "eu-west-1"
+project_name = "secure-multicloud"
+instance_type = "t3.micro"
+gcp_vpn_ip_0 = "35.242.66.89"
+gcp_vpn_ip_1 = "35.220.103.72"
