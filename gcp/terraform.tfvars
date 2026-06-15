@@ -1,0 +1,7 @@
+project_id   = "cloud-gcl"
+region       = "europe-west1"
+zone         = "europe-west1-b"
+aws_vpn_ip_0 = "52.19.111.28"
+aws_vpn_ip_1 = "108.128.78.222"
+aws_vpn_ip_2 = "52.19.111.28"
+aws_vpn_ip_3 = "108.128.78.222"
